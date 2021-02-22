@@ -40,6 +40,11 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
+
+  const newHub = Header('some', 'most', 'all');
+  const element = document.querySelector(selector);
+
+  element.appendChild(newHub);
 }
 
 export { Header, headerAppender }
